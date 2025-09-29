@@ -19,6 +19,6 @@ from django.urls import path
 from tableapp import views
 
 urlpatterns = [
-    path('slot.html/',views.slot_view,name='slot.html'),
     path('admin/', admin.site.urls),
+    path('slot.html/',views.slot_view,name='slot.html'),
 ]

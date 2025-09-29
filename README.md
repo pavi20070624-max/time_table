@@ -89,8 +89,8 @@ Execute the program using runserver command.
       
 </head>
 <body style="background-color:#FFFAF0;">
-
-  <img src="/static/saveetha logo.png">
+   {% load static %}
+  <img src="{%static 'saveetha logo.png' %}">
 
    <H1> SLOT TIME TABLE - PAVITHRA.S (25017175)</H1>
          <TABLE class = "table1"> 
@@ -132,7 +132,6 @@ Execute the program using runserver command.
     </TR>
 </TABLE >
 </html>
-
 ```
 # OUTPUT 
 ![alt text](timetable.png)
