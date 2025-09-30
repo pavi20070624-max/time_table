@@ -132,6 +132,19 @@ Execute the program using runserver command.
     </TR>
 </TABLE >
 </html>
+VIEWS.PY:
+from django.shortcuts import render
+def slot_view(request):
+    return render(request, 'slot.html')  
+URLS.PY:
+from django.contrib import admin
+from django.urls import path
+from tableapp import views
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('slot.html/',views.slot_view,name='slot.html'),
+]
 ```
 # OUTPUT 
 ![alt text](timetable.png)
